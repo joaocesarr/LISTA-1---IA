@@ -8,25 +8,25 @@ class JogoDaVelhaMinimax
         {' ', ' ', ' '}
     };
 
-    static char jogador = 'X';       // Computador joga com 'X'
-    static char adversario = 'O';    // Oponente joga com 'O'
+    static char jogador = 'X';       // PC joga com 'X'
+    static char adversario = 'O';    // player joga com 'O'
 
     static void Main(string[] args)
     {
-        // Jogo principal
+        // Jogo inicial
         while (true)
         {
             ExibirTabuleiro();
             if (jogador == 'X')
             {
-                // Jogada do computador
+                // Jogada do PC
                 (int x, int y) = MelhorMovimentoMinimax();
                 tabuleiro[x, y] = jogador;
                 Console.WriteLine($"Computador escolheu: {x}, {y}");
             }
             else
             {
-                // Jogada do jogador
+                // Jogada de player
                 JogadaDoJogador();
             }
 
