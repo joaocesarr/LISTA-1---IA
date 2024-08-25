@@ -1,0 +1,2 @@
+# LISTA-1---IA
+LISTA 1 - IA
